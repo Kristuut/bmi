@@ -1,7 +1,5 @@
 public class BmiService {
-    public long calculate(int BMI) {
-        int weight = 58;
-        double growth = 1.7;
+    public long calculate(int weight, double growth) {
         double index = weight / (growth * growth);
 
         return (long) index;
